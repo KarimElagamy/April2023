@@ -1,0 +1,45 @@
+Router: a router is a box that lets all of your wired and wireless devices use the same internet connection at once and also allows them to talk to each other without having to do that over the internet.
+Modem: Is a box that connects your home network to the internet and it handles the analog to digital conversion. 
+Switch: Is a box that connects devices on a network by using packet switching - their main purpose is to keep traffic from any two devices from getting in the way of any other devices.
+Access Points: Is a networking device used to amplify an existing Wifi signal to extend the network range
+LAN: Local Area network - this is created by your router and is for your home or office and includes all the devices connected directly to the router
+WAN: Wide area network - this is a wider network created by connections between LANs, so multiple LANs connected together would create a WAN
+ISP: Internet Service Provider - this is the company which actually provides you with your internet connection by running cables underground to your biulding or area
+IP Address: an internet protocol address and its a numerical label for example 192.0.2.1 that identifies every computer network or device that uses the internet. And we use these IP addresses as a means of identification so that servers can know who is requesting data, and where to send that data. there are two main functions for an IP address: network interface identification, which is what we talked about earlier with identifying where data is coming from and getting sent from, and location addressing, which is IP geolocation, where somoene's IP address can tell us their general location.
+URL: Uniform Resource Locator - all it is is an address that translates into an IP address or points to an IP address.
+DNS: Domain Name System are basically a giant collection of URLs and their respective IP addresses
+Server-Client Architecture: When you visit a website, the website you see is the client (which is your machine or computer) and then the server is the actual web server that is sending you the HTML, CSS, and JavaScript files necessary to render this website on your machine.
+HTML Documents: HyperText Markup Language - it basically describes to your browser or computer how the structure of the page should be and what elements should be on it
+CSS Stylesheets: Cascading Stylesheets - this is what gives your page style, aka colors, appearances, background, animations, visuals.
+Javascript files: this is what gives your page functionality and makes it reactive or dynamic
+
+HTTP: Hypertext Transfer Protocol
+HTTPS: Hypertext Transfer Protocol Secure
+HTTP vs HTTPS: HTTP is unsecured while HTTPS is secured. HTTP uses port 80 on your computer while HTTPS uses port 443. HTTP operates at the application Layer, while HTTPS operates at the transport layer. No SSL certificates are required for HTTP, but with HTTPS we require an SSL certificate as well as a CA to sign it.
+CA: Certificate Authority is an entity that is trusted and issues SSL certificates
+SSL: Socker Sockets Layer - these digital certificates are basically data files used to encrypt and link any entity with a public key, and your browser uses them to authenticate content sent from web servers, so that we know we can trust that content. 
+
+There are 3 ways to include CSS in your HTML document:
+
+Inline CSS: basically means that you put the css on each element individually in the same line. For example
+<p style="color: red;">This is my paragraph</p>
+Embedded CSS: this is where we use the style tag in the head of the html document and put our css there. For example:
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April2023 Batch</title>
+    <style>
+     p {
+        color: red;
+     }
+    </style>
+</head>
+External Stylesheet: This is where you write your css in an external file, such as styles.css or something, and then you link it using the Link tag in the head of the HTML document. For example:
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April2023 Batch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
